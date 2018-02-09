@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Easy Digital Downloads - All Access Flat Rates
  * Plugin URI:      https://wordpress.org/plugins/edd-all-access-flat-rates
- * Description:     Override the All Access weighted commission calculation and reward vendors with flat rate amounts.
+ * Description:     Override the All Access weighted commission calculations and reward vendors with more straight forward flat rate amounts.
  * Version:         1.0.0
  * Author:          Sell Comet
  * Author URI:      https://sellcomet.com
