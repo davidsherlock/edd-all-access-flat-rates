@@ -188,7 +188,7 @@ class EDD_All_Access_Commission_Flat_Rates {
 					'price' 	  => $price_of_download,
 					'download_id' => $downloaded_product->ID,
 					'price_id'    => $price_id,
-					'amount'     => (float) $rate
+					'amount'      => (float) $rate
 				);
 
 				// Add the price of this product to the total value of all downloaded items in this file download log.
@@ -203,7 +203,7 @@ class EDD_All_Access_Commission_Flat_Rates {
 		// Calculate the flat rate commission amount
 		if ( ! empty( $downloaded_products ) ) {
 
-			// Make our flat rates easily filterable
+			// Make our All Access args easily filterable
 			$updated_commission_args = apply_filters( 'edd_all_access_flat_rates_record_commission_args', array(
 				'type'		=> 'flat',
 				'rate'    	=> $rate,
@@ -217,8 +217,8 @@ class EDD_All_Access_Commission_Flat_Rates {
 
 			// Setup our commission meta args and make it filterable
 			$commission_meta_args = apply_filters( 'edd_all_access_flat_rates_record_commission_meta_args', array(
-				'products' => $downloaded_products,
-				'total'    => $total_value_of_downloaded_items
+				'products' 	=> $downloaded_products,
+				'total'    	=> $total_value_of_downloaded_items
 			) );
 
 			// Store commission meta args as an object variable for later use
@@ -249,7 +249,7 @@ class EDD_All_Access_Commission_Flat_Rates {
 		$commissions_meta_settings = get_post_meta( $download_id, '_edd_commission_settings', true );
 		$type = isset( $commissions_meta_settings['type'] ) ? $commissions_meta_settings['type'] : 'percentage';
 
-		// If download does not have "all access" is the commission type, bail and don't modify the $args
+		// If download does not have "all access" as the commission type, bail and don't modify the $args
 		if ( 'all_access' != $type ) {
 			return;
 		}
@@ -257,6 +257,7 @@ class EDD_All_Access_Commission_Flat_Rates {
 		// Get the default flat rate for all access commissions
 		$rate = (float) edd_all_access_flat_rates_get_default_rate();
 
+		// If no rate set, bail and don't modify the $args
 		if ( false == $rate ) {
 			return;
 		}
