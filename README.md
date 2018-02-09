@@ -6,14 +6,14 @@ All Access Flat Rates for Easy Digital Downloads allows you to override the weig
 
 Let’s look at some real-world examples of how All Access Flat Rates could potentially be utilised in different scenarios:
 
-* You sell and All Access pass for $100 per month and have 50 products on your site by 5 vendors on your site. Each time a customer downloads an All Access product the vendor receives $0.25 for each unique download.
-* Weighted calculations can be confusing, flat rate amounts are easier for your vendors to understand. 1 download = one flat fee.
-* Some products on your store are not part of the All Access pass, and vendors receive a percentage for each item sold. These items are ignored from the flat rate calculations.
+* You sell and All Access pass for $100 per month and have 50 products by 5 vendors on your site. Each time a customer downloads an All Access product the vendor receives $0.25 for each unique download.
+* Weighted calculations can be confusing, flat rate amounts are easier for your vendors to understand and up-sell to potential marketplace vendors. 1 download = one flat rate fee.
+* Some products on your store are not part of the All Access pass, and vendors receive a percentage for each item sold. These items are ignored from the flat rate calculations and not overridden.
 
 ## Features
 
-* Easily set a global flat rate amount that will automatically override the weighted commission calculations
-* View a breakdown of which products were downloaded and the total commission earnings on a per-commission basis
+* Easily set a global flat rate amount that will automatically override the weighted commission calculations and calculate the correct commission amount
+* Easily view a breakdown of which products were downloaded and the total commission earnings for a single commission record
 * Seamless integration with Easy Digital Downloads and Commissions settings
 * Translation-ready and contains a POT file to help get you started translating into your own native language
 * Have a specific use-case? All Access Flat Rates includes plenty of developer-ready filters and action hooks to make it possible!
