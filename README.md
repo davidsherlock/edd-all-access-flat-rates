@@ -8,7 +8,7 @@ Let’s look at some real-world examples of how All Access Flat Rates could pote
 
 * You sell and All Access pass for $100 per month and have 50 products on your site by 5 vendors on your site. Each time a customer downloads an All Access product the vendor receives $0.25 for each unique download.
 * Weighted calculations can be confusing, flat rate amounts are easier for your vendors to understand. 1 download = one flat fee.
-* Some products on your store are not part of the All Access pass, and vendors recieve a percentage for each item sold. These items are ignored from the flat rate calculations.
+* Some products on your store are not part of the All Access pass, and vendors receive a percentage for each item sold. These items are ignored from the flat rate calculations.
 
 ## Features
 
