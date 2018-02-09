@@ -15,9 +15,9 @@
 
 
 // Exit if accessed directly
-if( !defined( 'ABSPATH' ) ) exit;
+if( ! defined( 'ABSPATH' ) ) exit;
 
-if( !class_exists( 'EDD_All_Access_Flat_Rates' ) ) {
+if( ! class_exists( 'EDD_All_Access_Flat_Rates' ) ) {
 
     /**
      * Main EDD_All_Access_Flat_Rates class

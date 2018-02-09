@@ -76,7 +76,7 @@ class EDD_All_Access_Commission_Flat_Rates {
 
 
 	/**
-	 * Triggered when an All Access payment is expired, we use this function to capture the freshly_expired_all_access pass object variable
+	 * Triggered when an All Access payment is expired, we use this function to capture the freshly_expired_all_access_pass object
 	 *
 	 * @since       1.0.0
 	 * @param       object $freshly_expired_all_access_pass The All Access Pass Object that has just expired.
