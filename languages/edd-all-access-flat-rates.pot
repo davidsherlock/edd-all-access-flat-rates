@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Easy Digital Downloads - All Access Flat Rates\n"
-"POT-Creation-Date: 2018-02-09 12:39+0000\n"
-"PO-Revision-Date: 2018-02-09 12:39+0000\n"
+"POT-Creation-Date: 2018-02-09 14:40+0000\n"
+"PO-Revision-Date: 2018-02-09 14:40+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -56,43 +56,43 @@ msgstr ""
 msgid "All Access Flat"
 msgstr ""
 
-#: includes/functions.php:39
+#: includes/functions/functions.php:39
 msgid "Invalid commission specified."
 msgstr ""
 
-#: includes/functions.php:59 includes/functions.php:78
+#: includes/functions/functions.php:59 includes/functions/functions.php:78
 msgid "All Access Pass Data"
 msgstr ""
 
-#: includes/functions.php:61
+#: includes/functions/functions.php:61
 msgid "This commission is not for an All Access Flat Rates product."
 msgstr ""
 
-#: includes/functions.php:83
+#: includes/functions/functions.php:83
 msgid "Total Cost of All Access"
 msgstr ""
 
-#: includes/functions.php:84
+#: includes/functions/functions.php:84
 msgid "Total Cost of Products"
 msgstr ""
 
-#: includes/functions.php:85
+#: includes/functions/functions.php:85
 msgid "Total Commission Amount"
 msgstr ""
 
-#: includes/functions.php:100
+#: includes/functions/functions.php:100
 msgid "Product"
 msgstr ""
 
-#: includes/functions.php:101
+#: includes/functions/functions.php:101
 msgid "Price"
 msgstr ""
 
-#: includes/functions.php:102
+#: includes/functions/functions.php:102
 msgid "Commission"
 msgstr ""
 
-#: includes/functions.php:127
+#: includes/functions/functions.php:127
 msgid "No downloaded products found."
 msgstr ""
 
@@ -106,8 +106,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Override the weighted commission calculation and reward vendors with a flat "
-"rate amount."
+"Override the All Access weighted commission calculation and reward vendors "
+"with flat rate amounts."
 msgstr ""
 
 #. Author of the plugin/theme
