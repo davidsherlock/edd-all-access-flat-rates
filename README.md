@@ -1,6 +1,6 @@
 ## [Easy Digital Downloads - All Access Flat Rates](https://wordpress.org/plugins/edd-all-access-flat-rates/)
 
-All Access Flat Rates for Easy Digital Downloads allows you to override the weighted All Access commission calculations and reward vendors with a more straight forward flat rate amount per product downloaded.
+All Access Flat Rates for Easy Digital Downloads allows you to override the weighted All Access commission calculations and reward vendors with a more straight forward flat rate amount per-product downloaded.
 
 ## Use-case Examples
 
