@@ -106,7 +106,7 @@ class EDD_All_Access_Commission_Flat_Rates {
 		$type = isset( $commissions_meta_settings['type'] ) ? $commissions_meta_settings['type'] : 'percentage';
 
 		// If download does not have "all access" is the commission type, bail and don't modify the $args
-		if ( 'all_access' != $type ){
+		if ( 'all_access' != $type ) {
 			return $commission_args;
 		}
 
@@ -203,19 +203,26 @@ class EDD_All_Access_Commission_Flat_Rates {
 		// Calculate the flat rate commission amount
 		if ( ! empty( $downloaded_products ) ) {
 
+			// Make our flat rates easily filterable
+			$updated_commission_args = apply_filters( 'edd_all_access_flat_rates_record_commission_args', array(
+				'type'		=> 'flat',
+				'rate'    	=> $rate,
+				'amount'    => $total_commission_amount
+			) );
+
 			// Update the commission args array to our new values
-			$commission_args['type']   = 'flat';
-			$commission_args['rate']   = (float) $rate;
-			$commission_args['amount'] = (float) $total_commission_amount;
+			$commission_args['type']   = $updated_commission_args['type'];
+			$commission_args['rate']   = $updated_commission_args['rate'];
+			$commission_args['amount'] = $updated_commission_args['amount'];
 
 			// Setup our commission meta args and make it filterable
-			$meta_args = apply_filters( 'edd_all_access_flat_rates_record_commission_meta_args', array(
+			$commission_meta_args = apply_filters( 'edd_all_access_flat_rates_record_commission_meta_args', array(
 				'products' => $downloaded_products,
-				'total'    => $total_value_of_downloaded_items,
+				'total'    => $total_value_of_downloaded_items
 			) );
 
 			// Store commission meta args as an object variable for later use
-			$this->meta_args = $meta_args;
+			$this->commission_meta_args = $commission_meta_args;
 
 		}
 
@@ -243,7 +250,7 @@ class EDD_All_Access_Commission_Flat_Rates {
 		$type = isset( $commissions_meta_settings['type'] ) ? $commissions_meta_settings['type'] : 'percentage';
 
 		// If download does not have "all access" is the commission type, bail and don't modify the $args
-		if ( 'all_access' != $type ){
+		if ( 'all_access' != $type ) {
 			return;
 		}
 
@@ -258,7 +265,7 @@ class EDD_All_Access_Commission_Flat_Rates {
 		$commission = eddc_get_commission( $commission_id );
 
 		// Store the commission meta
-		$commission->update_meta( '_edd_all_access_flat_rates', $this->meta_args );
+		$commission->update_meta( '_edd_all_access_flat_rates', $this->commission_meta_args );
 	}
 
 }
